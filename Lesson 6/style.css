@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: rgb(75, 69, 69);
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.heading_one {
+  margin: 1em;
+  color: white;
+  text-align: center;
+}
+
+.description_project {
+  width: 100%;
+  height: 10em;
+  background-color: rgba(171, 138, 138, 0.153);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 0px 0px 5px 3px;
+}
+
+h2 {
+  color: white;
+}
+
+.description {
+  color: wheat;
+  text-align: center;
+}
+
+.list_project {
+  margin: 2em;
+  color: white;
+}
+
+.information_project_team {
+  width: 100%;
+  height: 15em;
+  background-color: rgba(171, 138, 138, 0.153);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  box-shadow: 2px 1px 5px 1.5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  color: whitesmoke;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
