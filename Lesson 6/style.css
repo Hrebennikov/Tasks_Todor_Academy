@@ -14,15 +14,80 @@ body {
   height: 100%;
 }
 
+.header_container {
+    width: 100%;
+    height: 3em;
+    background-color: rgba(30, 27, 27, 0.333);
+}
+
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-right: 2em;
+    gap: 5em;
+}
+
+.list_nav {
+    color: white;
+    list-style-type: none;
+}
+
+.anchor_nav {
+    text-decoration: none;
+    color: white;
+}
+
+.anchor_nav:hover {
+    color: wheat;
+}
+
+.main_container {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.description_about_project {
+    width: 100%;
+    height: 10em;
+    background-color: rgba(171, 138, 138, 0.153);
+    margin-bottom: 2em;
+    box-shadow: 0px 0px 5px 3px;
+}
+
 .heading_one {
   margin: 1em;
   color: white;
   text-align: center;
 }
 
+.article {
+    color: white;
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+    height: px;
+    background-color: white;
+    margin: 1em;
+}
+
 .description_project {
   width: 100%;
   height: 10em;
+  margin-top: 2em;
   background-color: rgba(171, 138, 138, 0.153);
   display: flex;
   justify-content: center;
@@ -39,6 +104,10 @@ h2 {
 .description {
   color: wheat;
   text-align: center;
+}
+
+.aside {
+    color: white;
 }
 
 .list_project {
@@ -72,4 +141,22 @@ table, th, td {
 th, td {
   padding: 8px;
   text-align: left;
+}
+
+.footer_container {
+    width: 100%;
+    height: 10em;
+    margin-top: 2em;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(30, 27, 27, 0.333);
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    padding-top: 50px;
 }
