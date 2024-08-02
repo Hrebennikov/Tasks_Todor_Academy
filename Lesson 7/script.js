@@ -49,6 +49,7 @@ const reduce = fruits.reduce((acc, value) => {
 });
 
 console.log(reduce);
+<<<<<<< HEAD
 
 const arr3 = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
@@ -73,3 +74,5 @@ const arr3 = [
     }
   }
   
+=======
+>>>>>>> 201bd3332d62e6dc30bb7e2d9b9a7211dda1c371
