@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 5</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+        <p id="description" class="text-center">Thank you for taking the time to help us improve the platform</p>
+        </header>
+        <form action="" id="survey-form" method="post">
+        <div class="form-group">
+        <label for="first-name">Name <input id="name" name="name" type="text" required placeholder="Name" class="form-control"></label>
+        </div>
+        <div class="form-group">
+        <label for="email">Email <input id="Email" name="email" type="Email" required placeholder="Email" class="form-control"></label>
+        </div>
+        <div class="form-group">
+        <label for="age">Age (optional) <input id="age" name="age" type="number" min="10" max="99" class="form-control" placeholder="Age"></label>
+        </div>
+        <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <select name="role" id="dropdown" class="form-control" required>
+        <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="job">Full Time Job</option>
+        <option value="learner">Full Time Learner</option>
+        <option value="preferNo">Prefer not to say</option>
+        <option value="other">Other</option>
+        </select>
+        </div>
+        <div class="form-group">
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+        Definitely
+        <input name="user-recommend" value="definitely" type="radio" checked class="input-radio">
+        </label>
+        <label>
+        Maybe
+        <input name="user-recommend" value="Maybe" type="radio" class="input-radio">
+        </label>
+        <label>
+        Not sure
+        <input name="user-recommend" value="Not sure" type="radio" class="input-radio">
+        </label>
+        </div>
+        </form>
+        </div>        
+</body>
+</html>
