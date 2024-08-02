@@ -6,7 +6,10 @@ console.log(numbers);
 
 // Task 2
 const colors = ["червоний", "синій", "зелений", "жовтий", "чорний"];
-console.log(colors[2]);
+
+// Find index
+let findColorGreen = colors.findIndex(color => color === "зелений");
+console.log(findColorGreen);
 
 // Зберіг у змінній щоб у подальшому якщо б задобився цей елемент щоб його використати
 let popColors = colors.pop();
