@@ -83,17 +83,17 @@ console.log("\n");
 function letVariable() {
     console.log("Let");
 
-    console.log(initialLet); // Error
+    // console.log(initialLet); // Error
 
     let initialLet = "Let!";
-    console.log("Після оголошення:", initialLet); // Let!
+    // console.log("Після оголошення:", initialLet); // Let!
 
     if (true) {
         let insideBlockLet = "Всередині блоку!";
         console.log("В блоці:", insideBlockLet);
     }
 
-    console.log("Поза блоком):", insideBlockLet); // Error
+    // console.log("Поза блоком):", insideBlockLet); // Error
 }
 
 letVariable();
@@ -103,22 +103,37 @@ console.log("\n");
 function constVariable() {
     console.log("Const");
 
-    console.log(initialConst); // Error
+    // console.log(initialConst); // Error
 
     const initialConst = "Const!";
     console.log("initialConst:", initialConst); // Const!
 
-    initialConst = "Спроба змінити константу"; // Error
+    // initialConst = "Спроба змінити константу"; // Error
 
     if (true) {
         const insideBlockConst = "Const в блоці!";
         console.log("В блоці:", insideBlockConst);
     }
 
-    console.log("Поза блоком:", insideBlockConst); // Error
+    // console.log("Поза блоком:", insideBlockConst); // Error
 }
 
 constVariable();
 
 // var має глобальну або функціональну область видимості, тому вона буде викликатися поза блоком
 // let і const мають блочну видимість їх поза блоком не видно тому вони не підлягають hoisting 
+
+
+function outer() {
+    let x = 10;
+ 
+    function inner() {
+       let y = 5;
+       return x + y;
+    }
+ 
+       return inner;
+    }
+ 
+    const closureFunc = outer();
+    const result = inner();
